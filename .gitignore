@@ -1,0 +1,6 @@
+data/
+input_videos/
+output_videos/
+models/
+yolo_output/
+yolov8x.pt
