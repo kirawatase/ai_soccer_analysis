@@ -1,6 +1,16 @@
+<<<<<<< HEAD
 data/
+=======
+>>>>>>> 05f92cd64cd0a957afcb2c28c046e1a19d56fe3e
 input_videos/
 output_videos/
 models/
 yolo_output/
+<<<<<<< HEAD
 yolov8x.pt
+=======
+roboflow_output/
+venv/
+field_segmenter/
+tvcalib/
+>>>>>>> 05f92cd64cd0a957afcb2c28c046e1a19d56fe3e

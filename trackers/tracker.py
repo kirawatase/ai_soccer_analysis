@@ -164,6 +164,7 @@ class Tracker:
 
         return frame
 
+<<<<<<< HEAD
     def draw_team_ball_control(self,frame,frame_num,team_ball_control):
         # Draw a semi-transparent rectaggle 
         overlay = frame.copy()
@@ -183,6 +184,25 @@ class Tracker:
 
         return frame
 
+=======
+    def draw_team_ball_control(self, frame, frame_num, team_ball_control):
+        team_ball_control_till_frame = np.array(team_ball_control[:frame_num+1])
+
+        if len(team_ball_control_till_frame) == 0:
+            return frame  # No team control data for this frame
+
+    # Calculate how many frames each team has had control up to this point
+        team_1_num_frames = team_ball_control_till_frame[team_ball_control_till_frame==1].shape[0]
+        team_2_num_frames = team_ball_control_till_frame[team_ball_control_till_frame==2].shape[0]
+
+    # Add annotations to the frame (e.g., showing which team has control)
+    # Customize your annotations here, e.g., drawing text or graphics on the frame
+        cv2.putText(frame, f'Team 1: {team_1_num_frames} frames', (50, 50), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 0, 255), 2)
+        cv2.putText(frame, f'Team 2: {team_2_num_frames} frames', (50, 100), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 2)
+    
+        return frame
+    
+>>>>>>> 05f92cd64cd0a957afcb2c28c046e1a19d56fe3e
     def draw_annotations(self,video_frames, tracks,team_ball_control):
         output_video_frames= []
         for frame_num, frame in enumerate(video_frames):
