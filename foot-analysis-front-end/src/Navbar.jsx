@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
-    <nav className="bg-blue-400 p-4">
+    <nav className="bg-gray-900 p-4">
       <div className="flex justify-center">
-        <ul className="flex space-x-12 text-gray-100 font-semibold font-tech text-xl">
+        <ul className="flex space-x-12 text-gray-100 font-semibold font-apple text-xl">
           <li>
             <Link 
               to="/" 
-              className="hover:text-gray-300 border border-gray-100 rounded-md px-4 py-2 hover:bg-blue-500 transition"
+              className="hover:text-gray-300 border-gray-600 hover:bg-gray-700 transition px-4 py-2"
             >
               Home
             </Link>
@@ -17,7 +17,7 @@ const Navbar = () => {
           <li>
             <Link 
               to="/project" 
-              className="hover:text-gray-300 border border-gray-100 rounded-md px-4 py-2 hover:bg-blue-500 transition"
+              className="hover:text-gray-300 border-gray-600 hover:bg-gray-700 transition px-4 py-2"
             >
               The Project
             </Link>
@@ -25,7 +25,7 @@ const Navbar = () => {
           <li>
             <Link 
               to="/team" 
-              className="hover:text-gray-300 border border-gray-100 rounded-md px-4 py-2 hover:bg-blue-500 transition"
+              className="hover:text-gray-300 border-gray-600 hover:bg-gray-700 transition px-4 py-2"
             >
               Our Team
             </Link>
