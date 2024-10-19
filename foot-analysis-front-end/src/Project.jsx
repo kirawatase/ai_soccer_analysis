@@ -46,6 +46,9 @@ const Project = () => {
           to analyze soccer videos. Our code tracks players and some parameters
           such as distances between players and the ball, body positioning, balls won,
           etc. It gives suggestions to optimize strategy along with visualization of data. 
+          <br></br>
+          More on how it works...
+          blah blah blah...
         </p>
 
         {step === 1 && (
