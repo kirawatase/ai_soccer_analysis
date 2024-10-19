@@ -3,7 +3,6 @@ output_videos/
 models/
 yolo_output/
 roboflow_output/
-segment_model/
 venv/
 field_segmenter/
 tvcalib/
