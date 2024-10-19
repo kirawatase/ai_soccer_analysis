@@ -106,10 +106,10 @@ const Project = () => {
               </p>
             </div>
 
-            <div className="text-2xl font-bold text-gray-900 mb-6">
+            <div className="text-2xl font-bold text-gray-100 mb-6">
              Possession:
             </div>
-            <div className="text-lg leading-relaxed text-gray-900 mb-8">
+            <div className="text-lg leading-relaxed text-gray-100 mb-8">
               Team A: 51.7% | Team B: 48.3%
             </div>
             <img 
@@ -118,10 +118,10 @@ const Project = () => {
               className="w-full max-w-md mx-auto rounded-lg border-4 border-gray-600 mb-12"
             />
 
-            <div className="text-2xl font-bold text-gray-900 mb-6">
+            <div className="text-2xl font-bold text-gray-100 mb-6">
              Turnovers:
             </div>
-            <div className="text-lg leading-relaxed text-gray-900 mb-8">
+            <div className="text-lg leading-relaxed text-gray-100 mb-8">
               Team A: 2 | Team B: 2
             </div>
             <img 
@@ -130,10 +130,10 @@ const Project = () => {
               className="w-full max-w-md mx-auto rounded-lg border-4 border-gray-600 mb-12"
             />
 
-            <div className="text-2xl font-bold text-gray-900 mb-6">
+            <div className="text-2xl font-bold text-gray-100 mb-6">
              Pass Completion:
             </div>
-            <div className="text-lg leading-relaxed text-gray-900 mb-8">
+            <div className="text-lg leading-relaxed text-gray-100 mb-8">
               Team A: 75% | Team B: 83%
             </div>
             <img 
@@ -142,8 +142,12 @@ const Project = () => {
               className="w-full max-w-md mx-auto rounded-lg border-4 border-gray-600 mb-12"
             />
 
+
           </div>
         )}
+        <div className="relative text-center py-4 text-gray-300 z-10">
+            &copy; 2024 HackOHI/O 12 Team #173 - All Rights Reserved
+          </div>
       </div>
     </div>
   );

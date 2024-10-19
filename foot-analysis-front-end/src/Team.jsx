@@ -9,6 +9,9 @@ const Team = () => {
           Our team consists of three passionate technologists with passion for soccer!
         </p>
       </div>
+      <div className="relative text-center py-4 text-gray-300 z-10">
+          &copy; 2024 HackOHI/O 12 Team #173 - All Rights Reserved
+        </div>
     </div>
   );
 };
