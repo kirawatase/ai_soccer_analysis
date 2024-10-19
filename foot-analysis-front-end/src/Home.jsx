@@ -44,7 +44,7 @@ const Home = () => {
         </div>
 
         <div className="relative flex flex-col text-gray-100 items-center justify-center mt-6 px-8 py-16 text-center font-apple text-lg leading-relaxed font-normal max-w-4xl mx-auto z-10">
-            All my life I knew one thing. Soccer. I lived and breathed day in and day out by strategies and techniques and pushed myself to the absolute limit.
+            All my life I knew one thing. Soccer. Day in, day out, I lived and breathed strategies and techniques and pushed myself to the absolute limit.
             I played against people older than me. I played against boys. I played D1 at OSU. All the odds were stacked against me but I stood my
             ground and even excelled. Life however, had other plans. I was injured and forced into medical retirement. I was lost without direction. However, 
             I will not let the strategies and techniques I've perfected over countless years go to waste. I have found new passion in mathematics, AI, and coding.
