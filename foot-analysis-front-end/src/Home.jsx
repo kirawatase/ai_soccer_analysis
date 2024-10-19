@@ -1,5 +1,4 @@
-import React, { useRef } from 'react';
-import useIntersectionObserver from './useIntersectionObserver';
+import React from 'react';
 import backgroundVideo from './assets/backgroundVideoCropped.mp4';
 
 
