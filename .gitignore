@@ -3,4 +3,6 @@ input_videos/
 output_videos/
 models/
 yolo_output/
-yolov8x.pt
+roboflow_output/
+segment_model/
+venv/
