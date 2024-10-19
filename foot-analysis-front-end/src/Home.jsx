@@ -5,7 +5,7 @@ const Home = () => {
   return (
     <div className="relative w-full flex flex-col items-center justify-center m-0">
       {/* Cropped Video Background */}
-      <div className="absolute top-0 left-0 w-full overflow-hidden -z-20">
+      <div className="absolute top-0 left-0 h-full w-full overflow-hidden -z-20">
         <video
           className="w-full h-full object-cover transform translate-y-[-15%]"
           src={backgroundVideo}
@@ -18,7 +18,7 @@ const Home = () => {
       </div>
 
       {/* Dark Tint Overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-full bg-black opacity-50 -z-10"></div> 
 
       {/* Content Overlay */}
       <div className="relative flex flex-col items-center justify-center mt-6 px-8 py-16 text-center font-apple text-lg leading-relaxed font-normal max-w-4xl mx-auto z-10">
@@ -36,18 +36,24 @@ const Home = () => {
         </div>
       </div>
       {/* Gap before Statistics */}
-      <div className="mt-40 text-5xl font-bold mb-4 text-white">
-        Our Motivations
-        
-      </div>
+      <div className ="bg-gray-900 w-full overflow-hidden">
+        <div className="mt-40 text-5xl font-bold mb-4 text-white flex justify-center">
+          Our Motivations
+          
+        </div>
 
-      <div className="text-center text-white">
-          I was
-      </div>
+        <div className="relative flex flex-col text-gray-100 items-center justify-center mt-6 px-8 py-16 text-center font-apple text-lg leading-relaxed font-normal max-w-4xl mx-auto z-10">
+            All my life I knew one thing. Soccer. I lived and breathed day in and day out by strategies and techniques and pushed myself to the absolute limit.
+            I played against people older than me. I played against boys. I played D1 at OSU. All the odds were stacked against me but I stood my
+            ground and even excelled. Life however, had other plans. I was injured and forced into medical retirement. I was lost without direction. However, 
+            I will not let the strategies and techniques I've perfected over countless years go to waste. I have found new passion in mathematics, AI, and coding.
+            It is time to pass on my torch and this is my way of doing it.
+        </div>
 
-      {/* Footer */}
-      <div className="relative text-center py-4 text-gray-300 z-10">
-        &copy; 2024 HackOHI/O 12 Team #173 - All Rights Reserved
+        {/* Footer */}
+        <div className="relative text-center py-4 text-gray-300 z-10">
+          &copy; 2024 HackOHI/O 12 Team #173 - All Rights Reserved
+        </div>
       </div>
     </div>
   );
