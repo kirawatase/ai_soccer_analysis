@@ -1,4 +1,3 @@
-data/
 input_videos/
 output_videos/
 models/
@@ -7,3 +6,4 @@ roboflow_output/
 segment_model/
 venv/
 field_segmenter/
+tvcalib/
