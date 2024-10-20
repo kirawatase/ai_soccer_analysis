@@ -1,25 +1,26 @@
 import React from 'react';
 import IMG_0327 from './assets/IMG_0327.png';
 import DYLAN from './assets/Dylan.png';
+import ANDY from './assets/Andy.png';
 
 const Team = () => {
   const teamMembers = [
     {
       name: 'Andy Liu',
       role: 'Mathematics',
-      description: 'Andy is a theoretical math major who developed the majority of the front-end for the project as well as making many stylistic decisions.',
-      image: 'https://via.placeholder.com/150',  // Replace with actual image URL
+      description: 'Andy contributed by implementing key, valuable features for our website.',
+      image: ANDY,  // Replace with actual image URL
     },
     {
       name: 'Kira Watase',
       role: 'Mathematics',
-      description: 'Kira is the core of our team and the original D1 soccer player and math major who came up with the idea. She is responsible for much of the AI and data analysis.',
+      description: 'Kira\'s expertise immensely contributed to our AI models and using YOLO and Roboflow.',
       image: IMG_0327,  // Replace with actual image URL
     },
     {
       name: 'Dylan Jian',
-      role: 'Computer Science',
-      description: 'Dylan is a computer science major who developed the majority of the back-end and how we are implementing the AI to connect to our front end.',
+      role: 'Computer Science and Engineering',
+      description: 'Dylan built the majority of the front-end using Vite+React and Tailwind CSS.',
       image: DYLAN,  // Replace with actual image URL
     },
   ];

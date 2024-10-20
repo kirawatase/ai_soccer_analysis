@@ -1,5 +1,14 @@
 import React, { useState, useEffect } from 'react';
 import Example from './assets/example.png';
+import TeamAPC from './assets/TeamAPC.png';
+import TeamBPC from './assets/TeamBPC.png';
+import POSS from './assets/poss.jpg';
+import ASP from './assets/ASP.png';
+import BSP from './assets/BSP.png';
+import ATD from './assets/ATD.png';
+import BTD from './assets/BTD.png';
+import BVC from './assets/backgroundVideo.mp4';
+
 
 const Project = () => {
   const [file, setFile] = useState(null); 
@@ -31,7 +40,7 @@ const Project = () => {
       const timer = setTimeout(() => {
         setShowProceedButton(true); 
         setProcessingMessage('Ready! Proceed below.'); 
-      }, 3500);
+      }, 5500);
 
       return () => clearTimeout(timer); 
     }
@@ -44,11 +53,8 @@ const Project = () => {
         <p className="text-lg leading-relaxed text-gray-100 mb-8">
           We used YOLO and Roboflow to create an advanced AI model 
           to analyze soccer videos. Our code tracks players and some parameters
-          such as distances between players and the ball, body positioning, balls won,
+          such as distance covered by team/players, max speeds of players, pass completion, and possession percentage
           etc. It gives suggestions to optimize strategy along with visualization of data. 
-          <br></br>
-          More on how it works...
-          blah blah blah...
         </p>
 
         {step === 1 && (
@@ -60,6 +66,7 @@ const Project = () => {
             
             <input 
               type="file" 
+              accept="video/mp4, video/quicktime"
               onChange={handleFileChange} 
               className="block w-full text-lg text-gray-900 border-2 border-gray-600 rounded-lg cursor-pointer bg-gray-100 p-2 focus:outline-none"
             />
@@ -106,26 +113,50 @@ const Project = () => {
               </p>
             </div>
 
+            <video 
+                className="w-full max-w-md mx-auto rounded-lg border-4 border-gray-600 mb-8" 
+                controls
+              >
+                <source src={BVC} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+
             <div className="text-2xl font-bold text-gray-100 mb-6">
-             Possession:
+             Max Speeds:
             </div>
             <div className="text-lg leading-relaxed text-gray-100 mb-8">
-              Team A: 51.7% | Team B: 48.3%
+              Team 1: 
             </div>
             <img 
-              src={Example} 
+              src={ASP} 
+              alt="Analysis Result Example" 
+              className="w-full max-w-md mx-auto rounded-lg border-4 border-gray-600 mb-4"
+            />
+            <div className="text-lg leading-relaxed text-gray-100 mb-8">
+              Team 2: 
+            </div>
+            <img 
+              src={BSP} 
               alt="Analysis Result Example" 
               className="w-full max-w-md mx-auto rounded-lg border-4 border-gray-600 mb-12"
             />
 
             <div className="text-2xl font-bold text-gray-100 mb-6">
-             Turnovers:
+             Total Distance:
             </div>
             <div className="text-lg leading-relaxed text-gray-100 mb-8">
-              Team A: 2 | Team B: 2
+              Team 1: 
             </div>
             <img 
-              src={Example} 
+              src={ATD} 
+              alt="Analysis Result Example" 
+              className="w-full max-w-md mx-auto rounded-lg border-4 border-gray-600 mb-4"
+            />
+            <div className="text-lg leading-relaxed text-gray-100 mb-8">
+              Team 2: 
+            </div>
+            <img 
+              src={BTD} 
               alt="Analysis Result Example" 
               className="w-full max-w-md mx-auto rounded-lg border-4 border-gray-600 mb-12"
             />
@@ -134,12 +165,29 @@ const Project = () => {
              Pass Completion:
             </div>
             <div className="text-lg leading-relaxed text-gray-100 mb-8">
-              Team A: 75% | Team B: 83%
+              Team 1: 
             </div>
             <img 
-              src={Example} 
+              src={TeamAPC} 
+              alt="Analysis Result Example" 
+              className="w-full max-w-md mx-auto rounded-lg border-4 border-gray-600 mb-4"
+            />
+            <div className="text-lg leading-relaxed text-gray-100 mb-8">
+              Team 2: 
+            </div>
+            <img 
+              src={TeamBPC} 
               alt="Analysis Result Example" 
               className="w-full max-w-md mx-auto rounded-lg border-4 border-gray-600 mb-12"
+            />
+
+            <div className="text-2xl font-bold text-gray-100 mb-6">
+             Possession Over Time:
+            </div>
+            <img 
+              src={POSS} 
+              alt="Analysis Result Example" 
+              className="w-full max-w-md mx-auto rounded-lg border-4 border-gray-600 mb-4"
             />
 
 
