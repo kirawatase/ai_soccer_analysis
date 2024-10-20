@@ -7,7 +7,7 @@ import ASP from './assets/ASP.png';
 import BSP from './assets/BSP.png';
 import ATD from './assets/ATD.png';
 import BTD from './assets/BTD.png';
-import BVC from './assets/backgroundVideo.mp4';
+import BVC from './assets/backgroundVideoCropped.mp4';
 
 
 const Project = () => {
