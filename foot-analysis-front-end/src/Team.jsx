@@ -1,5 +1,6 @@
 import React from 'react';
 import IMG_0327 from './assets/IMG_0327.png';
+import DYLAN from './assets/Dylan.png';
 
 const Team = () => {
   const teamMembers = [
@@ -19,7 +20,7 @@ const Team = () => {
       name: 'Dylan Jian',
       role: 'Computer Science',
       description: 'Dylan is a computer science major who developed the majority of the back-end and how we are implementing the AI to connect to our front end.',
-      image: 'https://via.placeholder.com/150',  // Replace with actual image URL
+      image: DYLAN,  // Replace with actual image URL
     },
   ];
 
