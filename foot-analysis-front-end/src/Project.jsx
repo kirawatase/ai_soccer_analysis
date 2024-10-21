@@ -49,7 +49,7 @@ const Project = () => {
   return (
     <div className="font-apple bg-gray-800 min-h-screen py-16 px-8">
       <div className="max-w-4xl mx-auto text-center">
-        <h1 className="text-3xl font-bold text-gray-100 mb-6">About FootyAnalysis</h1>
+        <h1 className="text-3xl font-bold text-gray-100 mb-6">About AI Soccer Analysis</h1>
         <p className="text-lg leading-relaxed text-gray-100 mb-8">
           We used YOLO and Roboflow to create an advanced AI model 
           to analyze soccer videos. Our code tracks players and some parameters
